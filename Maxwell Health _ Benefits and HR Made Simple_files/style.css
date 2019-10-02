@@ -1,0 +1,812 @@
+/*
+Theme Name: maxwellhealth
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: maxwellhealth
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+maxwellhealth is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+# WP Fixes
+--------------------------------------------------------------*/
+i {
+	margin-right: 10px;
+}
+
+.paragraph h1,
+.paragraph h2,
+.paragraph h3,
+.paragraph h4,
+.paragraph h5 {
+	color: #0d596d;
+	font-weight: 500;
+	margin-top: 1.2em;
+	line-height: 1.6em;
+}
+.paragraph h3{
+	font-size: 1.9em;
+	margin-bottom: 0.5em;
+}
+.paragraph h4{
+	font-size: 1.2em;
+	margin-bottom: 0.2em;
+}
+
+.archive .header,
+.page-template-default .header,
+.page-template-page-partners #header,
+.page-template-page-video #header {
+	top: 0;
+}
+
+.archive-list-wrapper{
+	width: 100%;
+	margin-bottom: 40px;
+}
+.archive-list{
+	width: 33%;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+}
+.archive-list,
+.archive-list li{
+	font-size: 14px;
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+.archive-list li{
+	padding: 3px 40px 3px 4px;
+}
+.archive-list .entry-title{
+	font-size: 18px;
+	margin: 3px 0;
+}
+
+.page-template-page-partner #waiting-for .btn:last-of-type,
+.product #magic-line{
+	display: none;
+}
+
+
+.page-template-page-signup{
+	position: relative;
+	height: auto;
+	min-height: 100%;
+}
+.page-template-page-signup #footer{
+	position: absolute;
+	bottom: 0;
+	width:100%;
+	height: 450px;
+}
+#get-maxwell-form .form-selector select{
+	padding: 0 10px;
+}
+
+div.section .list li{
+	padding: 10px 0;
+}
+
+.question{
+	position: relative;
+}
+.questionText{
+	max-width: 100%;
+}
+.question .backto{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.careers .sectionArea .sectionTitle{
+	line-height: 1.1em;
+}
+
+#team .investors .imgContainer a{
+	display: inline-block;
+	width: 230px;
+	height: 100px;
+	margin: 20px;
+}
+#team .investors .imgContainer .logo{
+	display: table-cell;
+	margin: 0;
+	height: 100px;
+	vertical-align: middle;
+	width: 230px;
+	max-width: 100%;
+}
+#team .investors .imgContainer .logo img{
+	max-height: 80px;
+	margin: 0 auto;
+}
+.teamMembers .teamMember {
+	margin-right: -2px;
+	margin-bottom: -4px;
+	margin-top: -2px;
+}
+
+.b-director .description, .advisor .description{
+	top: 0;
+	width: 192px;
+}
+
+.bcorp-block .bcorp-logo{
+	background-image: none;
+}
+
+.single .top-wrapper{
+	min-height: inherit;
+}
+.error404 #header,
+.single #header{
+	top:0;
+}
+.single .contentContainer{
+	padding: 0;
+}
+.error404{
+	height: auto;
+}
+.error404 .section{
+	background-color: #f7fdff;
+	padding: 60px 0 120px;
+}
+.error404 .section ul{
+	list-style-position: inside;
+	margin: 20px;
+}
+.error-404 .title{
+	margin-top: 125px;
+}
+#press .sectionArea{
+	width: 100%;
+}
+.section.graph div.infographic p strong {
+    font-size: 4em;
+    line-height: 1.2em;
+    color: #84a343;
+}
+
+.eq-table{
+	display: table;
+	min-height: 410px;
+}
+.benstrategy .eq-table {
+	min-height: 330px;
+}
+.eq-table-cell{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.gallery-grid .gallery-grid-item{
+	padding: 2px;
+}
+.gallery-grid,
+.gallery-grid .gallery-grid-item {
+  -webkit-transition-duration: 0.7s;
+     -moz-transition-duration: 0.7s;
+      -ms-transition-duration: 0.7s;
+       -o-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+.gallery-grid {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+.gallery-grid .gallery-grid-item {
+  -webkit-transition-property: left, right, top;
+     -moz-transition-property: left, right, top;
+      -ms-transition-property: left, right, top;
+       -o-transition-property: left, right, top;
+          transition-property: left, right, top;
+}
+
+.nbs-flexisel-ul{
+	min-width: 19999px;
+	width: auto;
+}
+.nbs-flexisel-nav-left{
+	background-image: url(assets/img/site_wide/site_wide_sprite.png);
+	background-position: 77px -10px;
+}
+.nbs-flexisel-nav-right{
+	background-image: url(assets/img/site_wide/site_wide_sprite.png);
+	background-position: 50px -10px;
+}
+
+
+
+div.section .list li,
+div.section ul li,
+.section.benstrategy ul li {
+	list-style-image: url(assets/img/list-arrow.png);
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-top: 10px;
+}
+ul#logo-slider li{
+	list-style-image: none;
+	height: 170px;
+	padding: 10px 0;	
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+	align-items: center;
+}
+ul#logo-slider li img{
+	margin: 0 auto;
+	display: block;
+}
+
+div.section.features-container li:before {
+	background-image: url(newAssets/img/features/check_mark.svg);
+}
+
+.single-brokers #info ul li{
+	list-style-type: disc;
+}
+
+/* Signup Forms  */
+#get-maxwell-form .get-form{
+	max-width: 500px;
+	margin: 0 auto;
+}
+#get-maxwell-form label{
+	font-size: 16px;
+	font-weight: 400;
+}
+#get-maxwell-form input,
+#get-maxwell-form textarea
+#get-maxwell-form label,
+#get-maxwell-form legend{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#get-maxwell-form .hs_email.field.hs-form-field{
+	float: none;
+}
+#get-maxwell-form input.hs-input.error,
+#get-maxwell-form select.hs-input.error,
+#get-maxwell-form .hs-form div.field.error input,
+#get-maxwell-form .hs-form div.field.error textarea,
+#get-maxwell-form .hs-form div.field.error .chzn-choices,
+#get-maxwell-form textarea.hs-input.error {
+	border: 1px solid rgb(173, 59, 74);
+	box-shadow: 0 0 3px rgba(171,41,32,0.25);
+}
+#get-maxwell-form .hs-form .inputs-list label{
+	font-size: 14px;
+	text-transform: initial;
+}
+#get-maxwell-form .hs-form .inputs-list.hs-error-msgs label,
+.form-req-msg{
+	color: #c87872;
+}
+.form-req-msg{
+	text-align: center;
+	text-transform: uppercase;
+	margin: 0 auto 30px;
+}
+#get-maxwell-form .hs-button.primary.large{
+	background: #5db9d1;
+	border: 1px solid #0a4a5b;
+	color: #fff;
+	border-radius: 0;
+	font-family: 'LatoBold';
+	display: inline-block;
+	vertical-align: top;
+	-webkit-transition: background ease-in-out 0.2s;
+	-moz-transition: background ease-in-out 0.2s;
+	-ms-transition: background ease-in-out 0.2s;
+	-o-transition: background ease-in-out 0.2s;
+	transition: background ease-in-out 0.2s;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.8em;
+	height: 50px;
+	line-height: 50px;
+	font-weight: 700;
+	cursor: pointer;
+	width: 150px;
+	z-index: 150;
+	margin: 0 auto;
+}
+#get-maxwell-form .hs-button.primary:hover,
+#get-maxwell-form .hs-button.primary:focus{
+	background: #083c4a;
+	color: #5db9d1;
+	border: 1px solid #5fb9d1;
+}
+
+.section.benadmin .pos-helper .laptop-inside,
+.section.marketplace .pos-helper .laptop-inside,
+.section.tempo .pos-helper .laptop-inside {
+    box-sizing: border-box;
+    background: url(newAssets/img/homepage/laptop-benadmin.png) center center no-repeat;
+    background-size: contain;
+    padding: 12.2% 11.5% 15.9%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.section.iphone .pos-helper .laptop-inside,
+.section.app .pos-helper .laptop-inside {
+    box-sizing: border-box;
+    background: url(newAssets/img/homepage/phones-engagement.png) center center no-repeat;
+    background-position: 16% 0%;
+    background-position-x: 15%;
+    background-size: contain;
+    padding: 8.9% 35.7% 9%;
+    position: absolute;
+    top: 0;
+    left: 70px;
+    width: 102%;
+    height: 100%;
+}
+.section.app .pos-helper .laptop-inside {
+    transform: scale(1.4, 1.4);
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.laptop-inside iframe {
+	width: 100%;
+	height: 100%;
+}
+
+.login-banner-inner a {
+	color: #fff;
+	display: block;
+}
+
+
+/*--------------------------------------------------------------
+# Responsive media queries
+--------------------------------------------------------------*/
+@media (max-width: 960px){
+	.page-template-page-solutions div.section{
+		background-image: none !important; /* need to override inline style (inline style was used to add custom background from admin)*/
+	}
+	.section.tempo-sell-faster{
+		padding: 50px 0;
+		min-height: 300px;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 959px ){
+	.section.forpartners svg{
+		max-height: 100px;
+	}
+}
+@media (min-width: 848px) and (max-width: 959px ){
+	.section.app .pos-helper iframe {
+		padding: 10% 38.6% 9.5% 37%;
+		width: 106%;
+		max-width: 106%;
+		transform: scale(1.1, 1.1);
+	}
+}
+@media (min-width: 641px) and (max-width: 847px ){
+	.section.app .pos-helper iframe {
+		padding: 9% 36% 10% 37%;
+		width: 104%;
+	}
+}
+@media (min-width: 681px) and (max-width: 1024px ){
+	#secondary-parallax-helper-about ~ .internalPage .description .title {
+		margin: 10px auto 5px;
+		padding: 0;
+	}
+	#secondary-parallax-helper-about ~ .internalPage .title {
+		margin: 0 auto 5px;
+		padding: 10px 0;
+	}
+	#team .advisors, #team .b-directors{
+		max-width: 640px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+		display: block;
+	}
+
+}
+@media (max-width: 767px){
+	.teamMember .description .position,
+	#magic-line{display: none;}
+	#secondary-parallax-helper-about ~ .internalPage .teamMembers .title {
+		margin-top: 15px;
+	}
+	.question .backto,
+	.careers .sectionArea .backto{top: -30px;}
+	#press .coverageType{
+		padding-bottom: 1px;
+	}
+	#press .sectionArea .coverageCategories{
+		width: 35%;
+	}
+	#press .sectionArea .coverageList{
+		width: 65%;
+	}
+	.archive-list{
+		width: 50%;
+	}
+	.archive-list li{
+		font-size: 12px;
+	}
+	.archive-list .entry-title{
+		font-size: 16px;
+		line-height: 20px;
+	}
+}
+@media (max-width: 680px){
+	#secondary-parallax-helper-about ~ .internalPage .title {
+		margin: 0 auto 5px;
+		padding: 10px 0;
+	}
+	#team .advisors, #team .b-directors{
+		max-width: 320px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+	.eq-table,
+	.benstrategy .eq-table{
+		min-height: inherit;
+	}
+	.section.compliance h3,
+	.section.compliance p{
+		text-align: center;
+	}
+	.section.tempo-sell-faster img{
+		display: none;
+	}
+}
+@media (max-width: 480px){
+	#secondary-parallax-helper-about ~ .internalPage .teamMembers .title {
+		margin: 0 auto 10px;
+	}
+}
+
+
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+.screen-reader-text:focus {
+	background-color: #f1f1f1;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	clip: auto !important;
+	color: #21759b;
+	display: block;
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	height: auto;
+	left: 5px;
+	line-height: normal;
+	padding: 15px 23px 14px;
+	text-decoration: none;
+	top: 5px;
+	width: auto;
+	z-index: 100000; /* Above WP toolbar. */
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+/*--------------------------------------------------------------
+# Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Clearings
+--------------------------------------------------------------*/
+.clear:before,
+.clear:after,
+.entry-content:before,
+.entry-content:after,
+.comment-content:before,
+.comment-content:after,
+.site-header:before,
+.site-header:after,
+.site-content:before,
+.site-content:after,
+.site-footer:before,
+.site-footer:after {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+.clear:after,
+.entry-content:after,
+.comment-content:after,
+.site-header:after,
+.site-content:after,
+.site-footer:after {
+	clear: both;
+}
+
+/*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+.widget {
+	margin: 0 0 1.5em;
+}
+
+/* Make sure select elements fit in widgets. */
+.widget select {
+	max-width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 1.5em;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+	word-wrap: break-word;
+}
+
+.bypostauthor {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+	border: none;
+	margin-bottom: 0;
+	margin-top: 0;
+	padding: 0;
+}
+
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+	max-width: 105%;
+}
+
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+	margin-bottom: 1.5em;
+	max-width: 100%;
+}
+
+.wp-caption img[class*="wp-image-"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.wp-caption .wp-caption-text {
+	margin: 0.8075em 0;
+}
+
+.wp-caption-text {
+	text-align: center;
+}
+
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+	margin-bottom: 1.5em;
+}
+
+.gallery-item {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.gallery-columns-2 .gallery-item {
+	max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+	max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+	max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+	max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+	max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+	max-width: 14.28%;
+}
+
+.gallery-columns-8 .gallery-item {
+	max-width: 12.5%;
+}
+
+.gallery-columns-9 .gallery-item {
+	max-width: 11.11%;
+}
+
+.gallery-caption {
+	display: block;
+}
+
+
+
+.page-template-page-partner .section span,
+.page-template-page-partner .section a {
+	text-decoration: none !important;
+}
+
+.page-template-page-partner .section a:hover,
+.page-template-page-partner .section a:focus {
+	color: #0d596d;
+}
+div.section.features-container li{
+	list-style-image: none;
+}
+
+
+.section.compliance.inverted .pos-helper iframe {
+  left: inherit;
+  right: 60px;
+}
+.inverted .gear.gearBig {right: 75%;}
+.inverted .gear.gearMed {right: 62%;}
+.inverted .gear.gearSml {right: 70%;}
+
+
+.footer-notice {
+	color: #999;
+	font-size: 11px;
+	font-family: 'Lato';
+	margin: 20px 0 0;
+	text-align: center;
+}
+
+.resources-jump-links li {
+    padding: 0 20px;
+}
+.resources-jump-links li a {
+    font-size: 18px;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+	.resources-jump-links li a {
+		font-size: 13px;
+	}
+}
